@@ -10,7 +10,6 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-URL::forceScheme('https');
 $proxy_url    = getenv('PROXY_URL');
 $proxy_schema = getenv('PROXY_SCHEMA');
 
