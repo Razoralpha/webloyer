@@ -2,11 +2,12 @@
 
 namespace App\Http\Middleware;
 
-use Closure;
-use Illuminate\Contracts\Auth\Guard;
-use Illuminate\Http\RedirectResponse;
 
-class TrustProxies
+use Illuminate\Http\Request;
+use Fideloper\Proxy\TrustProxies as Middleware;
+
+class TrustProxies extends Middleware
+
 {
     protected $proxies = '*';
 
